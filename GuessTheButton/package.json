@@ -1,0 +1,9 @@
+{
+    "name": "chat-server",
+    "version": "0.0.1",
+    "description": "WebSocket chat server",
+    "dependencies": {
+      "ws": "0.4.x"
+    }
+  }
+  
