@@ -1,13 +1,20 @@
-
 function calcolo(){
-  const numero = document.getElementById("inpNum").value;
-  let finale=0;
-  let k=1;
-  for (let i=1; i <= numero;i++){
-    k=k*i;
-    console.log(k);
+  const colore1 = Number(document.getElementById("sel1").value);
+  console.log(colore1);
+  const colore2 = Number(document.getElementById("sel2").value);
+  const colori = toString(colore1)+toString(colore2);
+  let convertcolori=Number(colori);
+  const moltiplicatore = Number(document.getElementById("sel3").value);
+  let moltiplicatorelavorato=1;
+  for (let i=1; i <= moltiplicatore;i++){
+    moltiplicatorelavorato=moltiplicatorelavorato*10;
   }
-  document.getElementById("pRisultato").textContent="Risultato: "+k;
+  const percen= Number(document.getElementById("sel4").value);
+
+  let resistenza=convertcolori*moltiplicatorelavorato;
+  let percentuale= (resistenza/100)*percen;
+  
+  document.getElementById("pRisultato").textContent="Resistenza: "+resistenza+" +/-"+percentuale;
 }
 
 
@@ -47,5 +54,13 @@ const $ = (selector) => {
     return this;
   };
 
+  element.isValid = function() {
+    const valid = this.checkValidity();
+    if (!valid) {
+      this.reportValidity();
+    }
+    return valid;
+  };
+  
   return element;
 };
