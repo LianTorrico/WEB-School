@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>    
+    <body>
+        <script src="script.js"></script>
+
+
+        <title>Generic Website</title>
+        <h1 id="titolo">Generic Website</h1>
+        <br>
+        <div id="interazione">
+            <button id="mostratestuale" onclick="testo()">Mostra paragrafo testuale</button>
+            <button id="mostracollegamenti" onclick="collegamenti()">Mostra paragrafo collegamenti</button>
+            <button id="mostracalcolatrice" onclick="calcolo()">Mostra calcolatrice</button>
+
+            <input type="text" id="inputnome" placeholder="Inserisci il tuo nome">
+            
+        </div>
+        <div id="testuale">
+            <p id="p1">HTML txt examples:</p>
+            <h2>h2</h2>
+            <br>
+            <h3>h3 </h3>
+            <br>
+            <h4>h4</h4>
+            <br>
+            <h5>h5</h5>
+            <br>
+            <h6>h6</h6>
+        </div>
+        <div id="collegamenti">
+            <a href="https://www.example.com">Link </a>
+            <br>
+            <audio controls>
+                <source src="source/audio.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <img src="https://thumb.wikimedia.org/wikipedia/it/thumb/d/d3/Colline_%28immagine%29.jpg/250px-Colline_%28immagine%29.jpg?utm_source=it.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Nel caso che non sia possibilie visualizzare l'immagine uscirà questo testo">
+            <br>
+            <code>"hello world" //Questo format è utilizzato per il codice</code> 
+        </div>
+        <br>
+        <div id="calcolatrice">
+            <input type="text" id="tipooperazione" placeholder="Inserisci il tipo di operazione">
+            <input type="number" id="num1" placeholder="Inserisci il primo numero">
+            <input type="number" id="num2" placeholder="Inserisci il secondo numero">
+            <button id="calcola" onclick="calcolatrice()">Calcola</button>
+            <br>
+            <p id="pRisultato"></p>
+        </div>
+
+            <style>
+            #calcolatrice {
+                background-color: lightblue;
+                width: 300px;
+                height: 400px;
+                position: absolute;
+            }
+            #testuale {
+                background-color: lightgreen;
+            }
+            #collegamenti {
+                background-color: lightyellow;
+            }
+        </style>
+    </body>
+
+    
